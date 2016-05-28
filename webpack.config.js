@@ -11,8 +11,12 @@ module.exports = {
   module: {
     loaders: [
       {test: /\.js$/, loader: 'babel', exclude: /node_modules/},
-      {test: /\.html$/, loader: 'raw'}
+      {test: /\.html$/, loader: 'raw'},
+      {test: /\.scss$/, loader: 'style!css!postcss!sass?sourceMap'}
     ]
+  },
+  postcss: function () {
+    return [autoprefixer];
   },
   plugins: [
     new webpack.optimize.UglifyJsPlugin({
