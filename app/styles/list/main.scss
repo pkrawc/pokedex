@@ -1,0 +1,43 @@
+section.list {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: auto;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  .poke-entry {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 4em;
+    margin-right: 2em;
+    &:hover {
+      
+    }
+    p {
+      color: $primaryBlack;
+      font-size: 0.8em;
+      font-weight: 900;
+      text-transform: uppercase;
+      span {
+        color: $disabledBlack;
+        margin-right: 0.5em;
+      }
+    }
+    .poke-img {
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      width: 48px;
+      height: 48px;
+      margin-left: 24px;
+      border: 4px solid $dividerBlack;
+      border-radius: 50%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

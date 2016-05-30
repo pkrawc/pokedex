@@ -1,0 +1,26 @@
+$xSmall: 360px;
+$small: 540px;
+$medium: 720px;
+$large: 1080px;
+$xLarge: 1280px;
+
+
+
+$pokeRed: #C95641;
+$pokeBlack: #2C2A2D;
+$pokeCream: #DCD3B2;
+
+// typography colors
+$primaryBlack: rgba($pokeBlack, 0.87);
+$secondaryBlack: rgba($pokeBlack, 0.54);
+$disabledBlack: rgba($pokeBlack, 0.38);
+$dividerBlack: rgba($pokeBlack, 0.12);
+
+$primaryWhite: rgba(#FFF, 1.0);
+$secondaryWhite: rgba(#FFF, 0.7);
+$disbaledWhite: rgba(#FFF, 0.5);
+$dividerWhite: rgba(#FFF, 0.12);
+
+$smallShadow: 0 1px 3px rgba(0,0,0,0.12);
+$mediumShadow: 0 3px 6px rgba(0,0,0,0.24);
+$largeShadow: 0 3px 12px rgba(0,0,0,0.24);

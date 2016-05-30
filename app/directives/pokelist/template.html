@@ -1,0 +1,9 @@
+<section class="list">
+  <div class="poke-entry"
+       ng-repeat="pokemon in list.pokemon">
+    <p><span>#{{$index+1}}</span>{{pokemon.name}}</p>
+    <span class="poke-img">
+      <img ng-src="{{pokemon.image}}">
+    </span>
+  </div>
+</section>

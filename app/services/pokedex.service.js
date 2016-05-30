@@ -3,7 +3,9 @@ import resource from 'angular-resource'
 
 class pokedexService {
   constructor($resource) {
-
+    this.pokedex = $resource('http://pokeapi.co/api/v2/pokemon/', {}, {
+        get: { cached: true, method: 'get' }
+      })
   }
 }
 

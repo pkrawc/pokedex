@@ -1,7 +1,12 @@
-### Endpoints
-```
-/
-/:pokemon_id
-```
+## Pokédex application
 
-Yea, so far this is a pretty simple app.
+Changelog:
+
+- Ionic application
+- Figure out how to break up stateProvider with nested routes.
+
+```
+''   - baseState:abstract
+/    - listState:index
+/:id - pokemonState:show
+```
