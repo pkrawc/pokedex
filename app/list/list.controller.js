@@ -4,9 +4,8 @@ class listCtrl {
     pokedexService.pokedex.get({
       limit: 150
     }, (res) => {
-      this.pokemon = res.results
-      this.pokemon.forEach(function(pokemon, index) {
-        pokemon.image = `http://pokeapi.co/media/sprites/pokemon/${(index + 1)}.png`
+      this.pokemon = res.results.map((p, i) => {
+        p.image = `http://pokeapi.co/media/sprites/pokemon/${(i + 1)}.png`
       })
     })
   }
