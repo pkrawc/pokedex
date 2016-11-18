@@ -6,6 +6,7 @@ class listCtrl {
     }, (res) => {
       this.pokemon = res.results.map((p, i) => {
         p.image = `http://pokeapi.co/media/sprites/pokemon/${(i + 1)}.png`
+        return p
       })
     })
   }
